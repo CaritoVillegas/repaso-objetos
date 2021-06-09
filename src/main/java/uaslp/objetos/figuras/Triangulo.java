@@ -28,12 +28,6 @@ public class Triangulo implements Figura{
         this.altura=altura;
     }
 
-
-    public double getArea() {
-        area=(base*altura)/2;
-        return area;
-    }
-
     public double getBase() {
         return base;
     }
@@ -44,6 +38,17 @@ public class Triangulo implements Figura{
 
     public String getDescription() {
         return  description;
+    }
+
+    public double getArea()throws DatoFaltanteException {
+        if(base==0){
+            throw new BaseNoProvistaException();
+        }
+        if(altura==0){
+            throw new AlturaNoProvistaException();
+        }
+        area=(base*altura)/2;
+        return area;
     }
 
     @Override
