@@ -1,6 +1,7 @@
 package uaslp.objetos.escuela;
 
 public class SalaB extends SalaDeJuntas{
+
     private SalaB(){
         this.name="Sala B";
     }

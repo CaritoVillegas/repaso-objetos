@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class EvaluadorDePromediosAdapter {
+
     private EvaluadorDePromedios evaluadorDePromedios;
 
     public EvaluadorDePromediosAdapter(EvaluadorDePromedios evaluadorDePromedios){
